@@ -1,0 +1,63 @@
+
+crear un panel de administacion de peliculas con lista mrss
+
+usuario y contraseña
+crear canal
+editar canal
+eliminar canal
+
+campos que tiene canal
+nombre o titulo = <title>Estrenos</title>
+
+crear categoria
+editar categoria
+eliminar categoria
+
+Campos que tiene categoria
+
+Nombre de la catgoria = <title>El Juez</title>
+Direccion de la pelicula = <media:content duration="" medium="video" fileSize="" 
+  url="http://felitoscorp.com/roku/peliculas/estrenos/el_juez_2014_sd.mp4" type="video/mp4">
+Descripcion de la pelicula o sinopsis =       <description>
+                          Aqui una descripcion refente a la pelicula
+                                            </description>
+Portada de la pelicula = <media:thumbnail url="http://felitoscorp.com/roku/imagenes/peliculas/el_juez_sd2.jpg" width="143" height="129" />
+Direccion del reproducctor de la pelicula = <media:player url="http://felitoscorp.com/roku/peliculas/estrenos/el_juez_2014_sd.mp4" />
+
+todo esto es en base a la lista mrss
+
+estructura basica de una lista mrss
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:ddn="http://discoverydn.com/about">
+  <channel>
+   
+   <title>Estrenos</title>
+    <item>
+      <title>El Juez</title>
+      <media:content duration="" medium="video" fileSize="" 
+  url="http://felitoscorp.com/roku/peliculas/estrenos/el_juez_2014_sd.mp4" type="video/mp4">
+        <media:description>
+      <description>
+Hank Palmer (Robert Downey Jr.), un importante abogado, regresa a su hogar tras la muerte de su madre. Se entera entonces de que su padre (Robert Duvall), que es el juez del pueblo y de quien est   distanciado, es sospechoso de haber cometido un crimen. Su decisi  n de investigar el caso lo lleva poco a poco a restablecer con los suyos una relaci  n que estaba rota.
+      </description>
+        </media:description>
+        <media:thumbnail url="http://felitoscorp.com/roku/imagenes/peliculas/el_juez_sd2.jpg" width="143" height="129" />
+        <media:player url="http://felitoscorp.com/roku/peliculas/estrenos/el_juez_2014_sd.mp4" />
+        <media:rating>nonadult</media:rating>
+        <media:keywords></media:keywords>
+      </media:content>
+      <ddn:id>1</ddn:id>
+    </item>
+
+
+ 
+  </channel>
+</rss>

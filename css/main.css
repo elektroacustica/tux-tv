@@ -1,0 +1,32 @@
+figure{
+	padding: 3em;
+}
+#logo{
+	opacity: .7;
+	width: 30%;
+}
+#logo-canal{
+	width: 100%;
+}
+#logo:hover{
+	opacity: 1;
+}
+.black{
+}
+.desc{
+	background: url('../img/fondos/fondo2.jpg');
+	padding: 1em;
+}
+.formulario{
+	background: #CFCFCF;
+	border-radius: .3em;
+	margin-top: 3em;
+	padding: 1em;
+}
+.titulo{
+	background: black;
+	color: white;
+	margin-top: 0;
+	padding: .5em 0 .5em 0;
+	width: 100%;
+}
