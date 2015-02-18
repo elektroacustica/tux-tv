@@ -1,50 +1,43 @@
 <?php
 
-class GeneroController extends \BaseController {
+class LoginController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
-	 * GET /genero
+	 * GET /login
 	 *
 	 * @return Response
 	 */
 	public function index()
 	{
-		$data = Genero::all();
-		return View::make('genero.index', compact('data'));
+		return View::make('login.index');
 	}
 
+	/**
+	 * Show the form for creating a new resource.
+	 * GET /login/create
+	 *
+	 * @return Response
+	 */
 	public function create()
 	{
-		return View::make('genero.create');
+		//
 	}
 
+	/**
+	 * Store a newly created resource in storage.
+	 * POST /login
+	 *
+	 * @return Response
+	 */
 	public function store()
 	{
-		$data = Input::except('_token');
-
-		$rules = [
-			'genero'	=> 'required | unique:generos,genero',
-			'color'		=> 'required | unique:generos,color'
-		];
-
-		$validacion = Validator::make($data, $rules);
-
-		if ($validacion->passes()) {
-			$g = new Genero();
-			$g->genero = Input::get('genero');
-			$g->color = Input::get('color');
-			$g->save();
-
-			return Redirect::action('GeneroController@index');
-		 } 
-
-		return Input::all();
+		//
 	}
 
 	/**
 	 * Display the specified resource.
-	 * GET /genero/{id}
+	 * GET /login/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -56,7 +49,7 @@ class GeneroController extends \BaseController {
 
 	/**
 	 * Show the form for editing the specified resource.
-	 * GET /genero/{id}/edit
+	 * GET /login/{id}/edit
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -68,7 +61,7 @@ class GeneroController extends \BaseController {
 
 	/**
 	 * Update the specified resource in storage.
-	 * PUT /genero/{id}
+	 * PUT /login/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -80,7 +73,7 @@ class GeneroController extends \BaseController {
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /genero/{id}
+	 * DELETE /login/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response

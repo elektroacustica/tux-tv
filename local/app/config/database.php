@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'roku',
 			'username'  => 'root',
-			'password'  => '11junio',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

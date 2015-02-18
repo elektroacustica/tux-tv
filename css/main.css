@@ -1,15 +1,28 @@
 figure{
 	padding: 3em;
 }
+#landing{
+	background: url('https://secure.netflix.com/ffe/siteui/acquisition/home/thisIsNetflix/5x3.5/Lifestyle_bg_This_is_Netflix_lg01.jpg');
+	background-size: cover;
+}
 #logo{
 	opacity: .7;
-	width: 30%;
+	transition:all 1s;
+	width: 30%
+}
+#logo:hover{
+	opacity: 1;
 }
 #logo-canal{
 	width: 100%;
 }
-#logo:hover{
-	opacity: 1;
+#sesion{
+	position: absolute;
+}
+#slogan{
+	position: absolute;
+	left: 40%;
+	bottom: 30%;
 }
 .black{
 }
@@ -22,6 +35,9 @@ figure{
 	border-radius: .3em;
 	margin-top: 3em;
 	padding: 1em;
+}
+.relative{
+	position: relative;
 }
 .titulo{
 	background: black;

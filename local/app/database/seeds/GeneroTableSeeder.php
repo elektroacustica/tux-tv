@@ -5,7 +5,8 @@ class GeneroTableSeeder extends Seeder {
 	public function run()
 	{
 		Genero::create([
-			'genero'	=>	'estreno'
+			'genero'	=> 'Estreno',
+			'color'		=> '#ff11fa'
 		]);
 	}
 

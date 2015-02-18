@@ -1,13 +1,19 @@
-
+﻿
 crear un panel de administacion de peliculas con lista mrss
 
 usuario y contraseña
-crear canal
-editar canal
-eliminar canal
+
+crear 
+canal
+editar 
+canal
+eliminar 
+canal
 
 campos que tiene canal
-nombre o titulo = <title>Estrenos</title>
+nombre o titulo = 
+<title>Estrenos</title>
+
 
 crear categoria
 editar categoria

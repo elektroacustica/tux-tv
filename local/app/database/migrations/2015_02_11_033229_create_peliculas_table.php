@@ -16,8 +16,8 @@ class CreatePeliculasTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('titulo');
+			$table->string('photo');
 			$table->string('url');
-			$table->string('imagen');
 			$table->text('descripcion');
 			$table->timestamps();
 		});

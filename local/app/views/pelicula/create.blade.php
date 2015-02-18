@@ -6,40 +6,26 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/main.css') }}">
 </head>
 <body>
 	<div class="container">
 		<h2>Admin de Laravel</h2>
 		<div class="row">
 			<div class="col-md-7">
-				{{ Form::open(['url' => 'admin/new-pelicula']) }}
+				{{ Form::open(['url' => 'admin/new-pelicula', 'files' => true, 'class' => 'formulario']) }}
 					<div class="form-group">
 						{{ Form::label('titulo', 'Nombre de la pelicula') }}
 						{{ Form::text('titulo', null, ['class' => 'form-control']) }}
 					</div>
 					<div class="form-group">
-						{{ Form::label('genero', 'Nombre de la pelicula') }}
-						<select name="genero_id" class="form-control">
-							@foreach($data as $d)
-							<option value="{{ $d->id }}">{{ $d->genero }}</option>
-							@endforeach
-						</select>
-					</div>
-					<div class="form-group">
-						{{ Form::label('url', 'Link de la pelicula') }}
-						{{ Form::text('url', null, ['class' => 'form-control']) }}
-					</div>
-					<div class="form-group">
-						{{ Form::label('portada', 'Portada') }}
-						{{ Form::text('portada', null, ['class' => 'form-control']) }}
-					</div>
-					<div class="form-group">
-						{{ Form::label('imagen', 'Imagen') }}
-						{{ Form::text('imagen', null, ['class' => 'form-control']) }}
+						{{ Form::label('photo', 'Imagen') }}
+						{{ Form::file('photo', ['class' => 'form-control']) }}
+						{{ $errors->first('photo', '<p class="text-danger">:message</p>'); }}
 					</div>
 					<div class="form-group">
 						{{ Form::label('descripcion', 'Descripcion ') }}
-						{{ Form::text('descripcion', null, ['class' => 'form-control']) }}
+						{{ Form::textarea('descripcion', null, ['class' => 'form-control']) }}
 					</div>
 					<div class="form-group">
 						<button class="btn btn-primary">Guardar</button>

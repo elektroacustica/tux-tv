@@ -16,6 +16,7 @@ class CreateGenerosTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('genero');
+			$table->string('color')->unique();
 			$table->timestamps();
 		});
 	}

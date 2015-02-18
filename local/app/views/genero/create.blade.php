@@ -17,6 +17,10 @@
 						{{ Form::text('genero', null, ['class' => 'form-control']) }}
 					</div>
 					<div class="form-group">
+						{{ Form::label('color', 'Color') }}
+						<input type="color" class="form-control" name="color">
+					</div>
+					<div class="form-group">
 						<button class="btn btn-primary">Guardar</button>
 					</div>
 				{{ Form::close() }}
