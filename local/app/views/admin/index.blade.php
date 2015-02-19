@@ -29,8 +29,19 @@
 					</div>
 					<div class="panel-body">
 						<p>Peliculas
-						<span class="btn btn-sm pull-right"><a href="admin/new-pelicula">todos </a></span>
+						<span class="btn btn-sm pull-right"><a href="admin/all-pelicula">todos </a></span>
 						<span class="btn btn-sm pull-right"><a href="admin/new-pelicula"> + añadir </a></span>
+						</p>
+					</div>
+				</div>
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Detalle</h3>
+					</div>
+					<div class="panel-body">
+						<p>Detalle (Asignar genero a pelicula)
+						<span class="btn btn-sm pull-right"><a href="admin/all-detalle">todos </a></span>
+						<span class="btn btn-sm pull-right"><a href="admin/new-detalle"> + añadir </a></span>
 						</p>
 					</div>
 				</div>

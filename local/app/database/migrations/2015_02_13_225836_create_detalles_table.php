@@ -17,8 +17,8 @@ class CreateDetallesTable extends Migration {
 			$table->increments('id');
 			$table->integer('genero_id')->unsigned();
 			$table->foreign('genero_id')->references('id')->on('generos')->onDelete('cascade');
-			$table->integer('pelicula_id')->unsigned();
-			$table->foreign('pelicula_id')->references('id')->on('peliculas')->onDelete('cascade');
+			$table->integer('titulo_id')->unsigned();
+			$table->foreign('titulo_id')->references('id')->on('peliculas')->onDelete('cascade');
 			$table->timestamps();
 		});
 	}

@@ -20,7 +20,7 @@
 			<img src="img/logo.png" alt="Tux TV" title="Tux TV" id="logo" />
 		</figure>
 		<div id="slogan">
-			<h2>Ve películas y series cuando quieras, donde quieras.</h2>
+			<h2 class="shadow-white">Mira las peliculas de estreno y mucho mas.</h2>
 			<button class="btn btn-success btn-lg">Contrata tu plan ahora</button>
 		</div>
 	</header>

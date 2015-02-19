@@ -11,11 +11,25 @@
 <body>
 	<div class="container">
 		<h2>Admin de Laravel</h2>
+		<p>
+			<a href="new-pelicula">
+				<button class="btn btn-success">+ añadir</button>
+			</a>
+			<a href="{{ asset('/admin') }}">
+				<button class="btn btn-success">Ir al Admin</button>
+			</a>
+		</p>
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-md-12 text-center">
 			@foreach($data as $d)
-			<p>{{ $d->titulo }}</p>
-			<img src="{{ asset('cover') }}/{{ $d->url }}" alt="">
+			<div class="item-cover">
+				<figure>
+					<img src="{{ asset('cover') }}/{{ $d->url }}" alt="" class="cover">
+					<figcaption>
+						<p class="text-center">{{ $d->titulo }}</p>
+					</figcaption>
+				</figure>
+			</div>
 			@endforeach
 			</div>
 		</div>

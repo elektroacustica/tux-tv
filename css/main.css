@@ -1,8 +1,11 @@
 figure{
 	padding: 3em;
 }
+i:hover{
+	color: black;
+}
 #landing{
-	background: url('https://secure.netflix.com/ffe/siteui/acquisition/home/thisIsNetflix/5x3.5/Lifestyle_bg_This_is_Netflix_lg01.jpg');
+	background: url('../img/background.jpg');
 	background-size: cover;
 }
 #logo{
@@ -24,7 +27,8 @@ figure{
 	left: 40%;
 	bottom: 30%;
 }
-.black{
+.cover{
+	height: 100px;
 }
 .desc{
 	background: url('../img/fondos/fondo2.jpg');
@@ -36,8 +40,16 @@ figure{
 	margin-top: 3em;
 	padding: 1em;
 }
+.item-cover{
+	background: #E1E2DE;
+	display: inline-block;
+	margin-bottom: .3em;
+}
 .relative{
 	position: relative;
+}
+.shadow-white{
+	text-shadow: .06em .071em .02em white;
 }
 .titulo{
 	background: black;

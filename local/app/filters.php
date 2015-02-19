@@ -33,6 +33,11 @@ App::after(function($request, $response)
 |
 */
 
+Route::filter('fecha', function()
+{
+	return Pelicula::where();
+});
+
 Route::filter('auth', function()
 {
 	if (Auth::guest())
@@ -88,3 +93,4 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
