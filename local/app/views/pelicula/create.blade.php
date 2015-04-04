@@ -17,6 +17,7 @@
 					<div class="form-group">
 						{{ Form::label('titulo', 'Nombre de la pelicula') }}
 						{{ Form::text('titulo', null, ['class' => 'form-control']) }}
+						{{ $errors->first('titulo', '<p class="text-danger">:message</p>'); }}
 					</div>
 					<div class="form-group">
 						{{ Form::label('photo', 'Imagen') }}
@@ -24,8 +25,14 @@
 						{{ $errors->first('photo', '<p class="text-danger">:message</p>'); }}
 					</div>
 					<div class="form-group">
+						{{ Form::label('url', 'Link') }}
+						{{ Form::text('url', null, ['class' => 'form-control', 'placeholder' => 'http://www.pelicula.com/titulo']) }}
+						{{ $errors->first('url', '<p class="text-danger">:message</p>'); }}
+					</div>
+					<div class="form-group">
 						{{ Form::label('descripcion', 'Descripcion ') }}
 						{{ Form::textarea('descripcion', null, ['class' => 'form-control']) }}
+						{{ $errors->first('descripcion', '<p class="text-danger">:message</p>'); }}
 					</div>
 					<div class="form-group">
 						<button class="btn btn-primary">Guardar</button>

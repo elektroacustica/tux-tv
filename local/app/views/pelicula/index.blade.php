@@ -24,7 +24,7 @@
 			@foreach($data as $d)
 			<div class="item-cover">
 				<figure>
-					<img src="{{ asset('cover') }}/{{ $d->url }}" alt="" class="cover">
+					<img src="{{ asset('cover') }}/{{ $d->photo }}" alt="" class="cover">
 					<figcaption>
 						<p class="text-center">{{ $d->titulo }}</p>
 					</figcaption>

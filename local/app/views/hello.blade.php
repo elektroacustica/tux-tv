@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tux TV</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 	<link rel="stylesheet" href="{{ asset('css/animate.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -21,7 +22,19 @@
 		</figure>
 		<div id="slogan">
 			<h2 class="shadow-white">Mira las peliculas de estreno y mucho mas.</h2>
-			<button class="btn btn-success btn-lg">Contrata tu plan ahora</button>
+			<a href="">
+				<button class="btn btn-success btn-lg">Contrata tu plan ahora</button>
+			</a>
+			<a href="contenido">
+				<button class="btn btn-danger btn-lg">Mira nuestro contenido</button>
+			</a>
+		</div>
+		<div class="row">
+			<div class="col-md-4-"></div>
+			<div class="col-md-4-">
+				<h2 class="label label-primary"></h2>
+			</div>
+			<div class="col-md-4-"></div>
 		</div>
 	</header>
 

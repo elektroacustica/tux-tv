@@ -33,6 +33,7 @@ class PeliculaController extends \BaseController {
 		$rules = [
 			'titulo'		=> 'required | unique:peliculas,titulo',
 			'photo'			=> 'required | mimes:jpeg,jpg,png',
+			'url'			=> 'required | url ',
 			'descripcion'	=> 'required'
 		];
 
@@ -44,7 +45,7 @@ class PeliculaController extends \BaseController {
 			$g = new Pelicula();
 			$g->titulo = Input::get('titulo');
 			$g->photo = Str::slug(Input::get('titulo')).'.'.$extension;
-			$g->url = Str::slug(Input::get('titulo')).'.'.$extension;
+			$g->url = Input::get('url');
 			$g->descripcion = Input::get('descripcion');
 			$g->save();
 

@@ -8,4 +8,8 @@ require 'views/pelicula/routes.php';
 
 Route::get('/', 'HomeController@welcome');
 
-Route::get('/data/{id}', 'HomeController@show');
+Route::get('/contenido', 'HomeController@contenido');
+
+Route::get('/pelicula/{id}', 'HomeController@show');
+
+Route::get('/genero/{id}', 'HomeController@genero');

@@ -1,4 +1,4 @@
-figure{
+	figure{
 	padding: 3em;
 }
 i:hover{
@@ -27,12 +27,35 @@ i:hover{
 	left: 40%;
 	bottom: 30%;
 }
+.fondo--color{
+	background: white;
+	margin-top: -10px;
+}
+.background--color{
+	background:#26C6DA;
+}
+.caratula{
+	height: 160px;
+	width: 120px;
+	display: inline-block;
+	margin-bottom: .2em;
+	border: .4em solid #D1C4E9;
+	border-radius: .2em;
+	transition: all .5s;
+}
+.caratula:hover{
+	opacity: .7;
+}
 .cover{
 	height: 100px;
 }
 .desc{
-	background: url('../img/fondos/fondo2.jpg');
+	background: black;
+	color: white;
 	padding: 1em;
+}
+.fondo{
+	background: #E8EAF6;
 }
 .formulario{
 	background: #CFCFCF;
@@ -44,6 +67,22 @@ i:hover{
 	background: #E1E2DE;
 	display: inline-block;
 	margin-bottom: .3em;
+}
+.msg{
+	background: #3F51B5;
+	color: white;
+	padding: 2em;
+	width: 100%;
+}
+.msg--color--red{
+	background: #004D40;
+}
+.no--a{
+	color: white
+}
+.no--a:hover{
+	text-decoration: none;
+	color: #e6e6e6;
 }
 .relative{
 	position: relative;
