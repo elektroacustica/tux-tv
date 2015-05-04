@@ -12,26 +12,33 @@
 </head>
 <body class="fondo">
 	<div class="container">
-		<figure class="text-left animated zoomIn">
-			<img class="pull-left" src="{{ asset('img/logo.png') }}" alt="Tux TV" title="Tux TV" width="200" />
-			<h1 class="text-center">El mejor contenido solo en Tux-TV</h1>
-		</figure>
 		<div class="row">
-			<div class="col-md-12">
-				<h2 class="msg"><i class="fa fa-star"></i> Estrenos</h2>
+			<figure class="text-left animated zoomIn">
+				<img class="pull-left" src="{{ asset('img/logo.png') }}" alt="Tux TV" title="Tux TV" width="200" />
+				<h1 class="text-center">El mejor contenido solo en Tux-TV</h1>
+			</figure>
+		</div>
+		<div class="row">
+			
+			<div class="col-md-4">
+				<h2 class="msg msg--color--blue"><i class="fa fa-star"></i> Estrenos</h2>
+			</div>
+			<div class="col-md-4">
+				<h2 class="msg msg--color--blue"><i class="fa fa-star"></i> Estrenos</h2>
+			</div>
+			<div class="col-md-4">
+				<h2 class="msg msg--color--blue"><i class="fa fa-star"></i> Estrenos</h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-4">
+				<h2 class="msg msg--color--red"><i class="fa fa-star"></i> Ultimas Agregadas </h2>
+			</div>
+			<div class="col-md-4">
+				<h2 class="msg msg--color--blue2"><i class="fa fa-star"></i> Ultimas Agregadas </h2>
+			</div>
+			<div class="col-md-4">
 				<h2 class="msg"><i class="fa fa-star"></i> Ultimas Agregadas </h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<h2 class="msg--color--red msg">
-					<i class="fa fa-star"></i>
-					<a href="" class="no--a">¡Ver mas!</a>
-				</h2>
 			</div>
 		</div>
 	</div>

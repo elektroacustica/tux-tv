@@ -24,7 +24,7 @@
 				<figure class="text-center fondo--color">
 					@foreach($pelicula as $d)
 					<a href="pelicula/{{ $d->id }}">
-						<img src="{{ asset('cover') }}/{{ $d->photo }}" class="caratula" title="{{ $d->titulo }}" />	
+						<img src="{{ asset('cover') }}/{{ $d->photo }}" class="caratula" data-toggle="tooltip" data-placement="bottom" title="{{ $d->titulo }}" />	
 					</a>
 					@endforeach
 				</figure>
@@ -39,7 +39,7 @@
 				<figure class="text-center fondo--color">
 				@foreach($reciente as $d)
 					<a href="pelicula/{{ $d->id }}">
-						<img src="{{ asset('cover') }}/{{ $d->photo }}" class="caratula" title="{{ $d->titulo }}" />	
+						<img src="{{ asset('cover') }}/{{ $d->photo }}" class="caratula" data-toggle="tooltip" data-placement="bottom" title="{{ $d->titulo }}" />	
 					</a>
 				@endforeach
 				</figure>
@@ -49,10 +49,17 @@
 			<div class="col-md-12">
 				<h2 class="msg--color--red msg">
 					<i class="fa fa-star"></i>
-					<a href="" class="no--a">¡Ver mas!</a>
+					<a href="{{ URL::action('HomeController@principal') }}" class="no--a">¡Ver mas!</a>
 				</h2>
 			</div>
 		</div>
 	</div>
+	<script src="{{ asset('js/jquery.js') }}"></script>
+	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
 </body>
 </html>

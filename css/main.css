@@ -2,7 +2,7 @@
 	padding: 3em;
 }
 i:hover{
-	color: black;
+	color: yellow;
 }
 #landing{
 	background: url('../img/background.jpg');
@@ -71,12 +71,18 @@ i:hover{
 .msg{
 	background: #3F51B5;
 	color: white;
-	padding: 2em;
+	padding: 1.5em;
 	width: 100%;
 }
-.msg--color--red{
-	background: #004D40;
-}
+	.msg--color--red{
+		background: #2196F3;
+	}
+	.msg--color--blue{
+		background: #0097A7;
+	}
+	.msg--color--blue2{
+		background: #3D5AFE;
+	}
 .no--a{
 	color: white
 }

@@ -4,7 +4,7 @@ class HomeController extends BaseController {
 
 	public function welcome()
 	{
-		return View::make('hello', compact('id','titulo','url'));
+		return Genero::all();
 	}
 
 	public function show($id)
@@ -20,9 +20,25 @@ class HomeController extends BaseController {
 		return View::make('home.contenido', compact('pelicula', 'reciente', 'genero'));
 	}
 
-	public function genero($id)
+	public function genero()
 	{
-		return View::make('home.genero');
+		$data = Genero::all();
+		return View::make('home.genero', compact('data'));
+	}
+
+	public function generoID($id)
+	{
+		$data = Genero::find($id);
+		$genero = Genero::all();
+		$pelicula = DB::table('peliculas')->join('detalles', 'peliculas.id', '=', 'detalles.titulo_id')->where('genero_id', '=', $id)->paginate(8);
+		return View::make('sitio/genero', compact('data', 'genero', 'pelicula'));
+	}
+
+	public function principal()
+	{
+		$genero = Genero::orderBy('id')->get();
+		$data = DB::table('peliculas')->join('detalles', 'peliculas.id', '=', 'detalles.titulo_id')->orderBy('genero_id')->get();
+		return View::make('sitio/principal', compact('genero', 'data'));
 	}
 
 }

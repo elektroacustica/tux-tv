@@ -11,7 +11,7 @@
 	<div class="container">
 		<h2>Admin de Laravel</h2>
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-md-6">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h3 class="panel-title">Generos</h3>
@@ -42,6 +42,19 @@
 						<p>Detalle (Asignar genero a pelicula)
 						<span class="btn btn-sm pull-right"><a href="admin/all-detalle">todos </a></span>
 						<span class="btn btn-sm pull-right"><a href="admin/new-detalle"> + añadir </a></span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Planes</h3>
+					</div>
+					<div class="panel-body">
+						<p>Planes 
+						<span class="btn btn-sm pull-right"><a href="admin/all-generos">todos </a></span>
+						<span class="btn btn-sm pull-right"><a href="admin/new-plan"> + añadir </a></span>
 						</p>
 					</div>
 				</div>
